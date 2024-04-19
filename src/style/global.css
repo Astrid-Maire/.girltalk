@@ -10,13 +10,30 @@
 /*************farver***********/
 
 /*********grid************/
-
+:root {
+  --gap: 2em;
+  --line-offset: calc(var(--gap) / 2);
+  --line-thickness: 2px;
+  --line-color: white;
+}
 /*********grid************/
 
 /***********fonte************/
 @font-face {
+  font-family: Obviously;
+  src: url();
+  font-family: obviously;
+  src: url();
+}
+@font-face {
+  font-family: Archivo;
+  src: url();
+  font-family: Archivo;
+  src: url();
 }
 /***********fonte************/
+
+/***********Grids************/
 
 /***********Grids************/
 
@@ -38,19 +55,16 @@ body {
 h1 {
   font-family: Obviously;
   font-size: var(--h1-size);
-  color: var(--primary-color-b);
 }
 
 h2 {
   font-family: Archivo;
   font-size: var(--h2-size);
-  color: var(--primary-color-p);
 }
 
 p {
   font-family: Archivo;
   font-size: var(--p-size);
-  color: var(--secondary-color-b);
 }
 
 img {
