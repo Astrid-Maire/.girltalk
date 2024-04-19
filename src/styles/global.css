@@ -1,0 +1,58 @@
+/*************farver***********/
+:root {
+  --primary-color-p: rgb(247, 199, 217);
+  --primary-color-b: rgb(39, 58, 170);
+  --secondary-color-r: rgb(252, 77, 92);
+  --secondary-color-b: rgb(15, 79, 235);
+  --accent-color: rgb(244, 239, 227);
+  --tertier-color: rgb(29, 29, 27);
+}
+/*************farver***********/
+
+/*********grid************/
+
+/*********grid************/
+
+/***********fonte************/
+@font-face {
+}
+/***********fonte************/
+
+/***********Grids************/
+
+/***********Tekst størrelse************/
+:root {
+  --h1-size: 4rem;
+  --h2-size: 2.6rem;
+  --h3-size: 2rem;
+  --p-size: 1.4rem;
+  --footer-size: 0.25rem;
+  --headerAndLink-size: 1rem;
+}
+/***********Tekst størrelse************/
+
+/***********Styles på body***********/
+body {
+  background-color: var(--primary-color);
+}
+h1 {
+  font-family: Obviously;
+  font-size: var(--h1-size);
+  color: var(--primary-color-b);
+}
+
+h2 {
+  font-family: Archivo;
+  font-size: var(--h2-size);
+  color: var(--primary-color-p);
+}
+
+p {
+  font-family: Archivo;
+  font-size: var(--p-size);
+  color: var(--secondary-color-b);
+}
+
+img {
+  max-width: 100%;
+}
