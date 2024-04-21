@@ -1,5 +1,4 @@
 ---
-
 import TextBox from "./TextBox.astro"
 
 const girls = [
@@ -44,6 +43,10 @@ const girls = [
 ---
 
 <h1>Mød Lara, Jasmin og Sarah</h1>
+
+<ul class="container">
+    <li></li>
+</ul>
 
 {girls.map(girl=>{
     return <TextBox girl={girl} />
