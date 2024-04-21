@@ -1,21 +1,33 @@
 ---
 
+const { girl } = Astro.props
+
 ---
 
-<div>
-    <h2>Lara, 19 år, bor i Aalborg</h2>
-    <p>“Jeg har altid haft svært ved at se mig selv i spejlet og føle mig tilfreds med det billede, der mødte mig.”</p>
-    <p>“At acceptere mig selv har været en konstant kamp, hvor jeg altid følte mig som min egen værste kritiker.”</p>
-    <p>“Gennem Sisterhood lærte jeg gradvist at omfavne min krop, selvom jeg tidligere kun havde set fejl.”</p>
-    <p>“Sisterhood gav mig et rum, hvor jeg kunne være sårbar uden at føle mig svag.”</p>
-    <p>“At være en del af Sisterhood har givet mig en masse styrke og følelsen af empowerment.”</p>
+<div class="container">
+    <h2>{girl.name}, {girl.age} år, bor i {girl.town}</h2>
+    <div class="text">
+        {girl.quotes.map((quote: string) =>{
+            return <p>{quote}</p>
+        })}
+    </div>    
 </div>
 
 <style>
-    div {
+    .container {
         background-color: var(--bg-color);
-        max-width: 800px;
+        max-width: 550px;
         border-radius: 1rem;
         padding: 4.5rem 6rem;
+    }
+
+    .text {
+        max-height: 5lh;
+        overflow:scroll;
+    }
+
+    p {
+        color: var(--text-color);
+        font-style: italic;
     }
 </style>
