@@ -1,5 +1,10 @@
 body {
-  background-color: var(--primary-light);
+  background-color: var(--secondary-blue);
+}
+
+main {
+  max-width: 1120px;
+  margin: auto;
 }
 
 h1 {
@@ -7,12 +12,16 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: var(--size-h1);
+  text-transform: uppercase;
+  color: var(--primary-dark);
 }
 
 h2,
 h3 {
   font-family: "archivo-variable", sans-serif;
   font-variation-settings: "wght" 600, "wdth" 110;
+  text-transform: uppercase;
+  color: var(--primary-dark);
 }
 
 h2 {
@@ -28,4 +37,5 @@ p {
   font-variation-settings: "wght" 500, "wdth" 80;
   font-size: var(--size-p);
   max-width: 75ch;
+  color: var(--primary-dark);
 }
