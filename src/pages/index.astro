@@ -1,45 +1,6 @@
 ---
 import "../style/global.css";
-import Prove from "../components/Prove.astro";
-
+import Laesmere from "../components/Laesmere.astro";
 ---
-<Prove/>
 
-<div class="fold-ud">
-    <img src="/path/to/image.png" class="visBillede" alt="Vis billede 1" onclick={toggleTekst(1)} />
-    <div id="tekstContainer_1" class="tekstContainer" hidden>
-        <p>Sisterhood har grupper i både Odense og Aalborg.</p>
-    </div>
-
-    <img src="/path/to/another-image.png" class="visBillede" alt="Vis billede 2" onclick={toggleTekst(2)} />
-    <div id="tekstContainer_2" class="tekstContainer" hidden>
-        <p>Sisterhood er et fællesskab, hvor unge kvinder mødes over en periode på 8 til 16 uger. Du kan tilmelde dig og deltage løbende i løbet af denne periode.</p>
-    </div>
-
-    <!-- Fortsæt med at tilføje resten af dine fold-ud-sektioner her -->
-</div>
-
-<style>
-.fold-ud {
-    position: relative;
-}
-
-.tekstContainer {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-</style>
-
-<script>
-function toggleTekst(id) {
-    return function() {
-        const container = document.getElementById(`tekstContainer_${id}`);
-        container.hidden = !container.hidden;
-    };
-}
-</script>
+<Laesmere/>
